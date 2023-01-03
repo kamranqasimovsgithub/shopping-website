@@ -1,0 +1,14 @@
+.topline{
+    background-color: black;
+    color: #fff;
+}
+
+.topline .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+
+.topline .icons i{
+    margin-right: 15px;
+}

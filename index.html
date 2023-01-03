@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<title>Webpage</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Font Awesome-->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <style>
+        #reading-progress {
+            position: fixed;
+            width: 100%;
+            height: 5px;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+        }
+
+        #reading-progress-fill {
+            height: 5px;
+            width: 0;
+        }
+
+        #reading-progress-fill {
+            -webkit-transition: width 100ms ease;
+            -o-transition: width 100ms ease;
+            transition: width 100ms ease;
+            background-color: #69c71d;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="reading-progress"><div id="reading-progress-fill"></div></div>
+
+	<!--Header start-->
+        <header id="header">
+            <div class="header">
+                <div class="">
+                    <div class="header-navbar">
+                        <div class="header-logo">
+                            <h2>FEEL</h2>
+                        </div>
+                        <div class="header-menu">
+                            <ul id ="menuitems">
+                                <li><a href="#header">HOME</a></li>
+                                <li><a href="#about">ABOUT</a></li>
+                                <li><a href="#gallery">GALLERY</a></li>
+                                <li><a href="#blog">BLOG</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                            <span id="menu-icon" onclick="menuToggle()"><i class="fa fa-reorder"></i></span>
+                        </div>
+                    </div>
+                    <div class="header-text">
+                    
+                        <h1><span class="first-letter">W</span>elcome</h1>
+                        <h3>Fill me up with energy</h3>
+                        <a href="#" class="btn-coffee">Get started</a>
+                    </div>
+                </div>	
+            </div>
+        </header>
+        <!--Header stop-->
+
+        <!--About start-->
+        <section id="about">
+
+            <div class="row">
+                <div class="column">
+                    <div class="about">
+                        <div class="container">
+                            <div class="about-title">
+                                <h2>About</h2>
+            
+                            </div>
+                            <div class="about-content">
+                                <div class="about-img anime-left">
+                                    <img src="assets/image/about1.jpg" alt="">
+                                </div>
+                                <div class="about-text anime-right">
+                                    <h4>Our Story</h4>
+                                    <div id="asterisk">
+                                        <span><i class="fa fa-cube"></i></span>
+                                    </div>	
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                    
+                                </div>	
+                            </div>					
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="about ">
+                        <div class="container">
+                            
+                            <div class="about-content">
+                               
+                                <div class="about-text anime-left">
+                                    <h4>Our Mission</h4>
+                                    <div id="asterisk">
+                                        <span><i class="fa fa-cube"></i></span>
+                                    </div>	
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                    
+                                </div>	
+                                <div class="about-img anime-right">
+                                    <img src="assets/image/about2.jpg" alt="">
+                                </div>
+                            </div>					
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!--About stop-->
+    
+        <!--Portfolio-->
+    
+        <section id="gallery">
+            <div class="about-title">
+                <h2>Gallery</h2>
+
+            </div>
+            <div class="portfolio">
+                <div class="portfolio-item ani1">
+                    <img src="assets/image/b1.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item ani2">
+                    <img src="assets/image/b2.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item ani3">
+                    <img src="assets/image/b3.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item ani6">
+                    <img src="assets/image/b4.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item ani7">
+                    <img src="assets/image/b7.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                </div>
+                <div class="portfolio-item ani8">
+                    <img src="assets/image/b6.jpg" alt="">
+                    <div class="overlay">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    
+        <!--Portfolio--End-->
+        <!--Discover-->
+        <section id="blog">
+            <div class="about">
+                <div class="container">
+                    <div class="about-title">
+                        <h2>Blog</h2>
+                        <p>Discover our works</p>
+    
+                    </div>
+                    <div class="about-content">
+                        <div class="about-img anime-left">
+                            <img src="assets/image/b5.jpg" alt="">
+                        </div>
+                        <div class="about-text anime-right">
+                            <h4>High Perfomance</h4>
+                            <div id="asterisk">
+                                <span><i class="fa fa-cube"></i></span>
+                            </div>	
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>						
+                        </div>	
+                    </div>					
+                </div>
+            </div>
+        </section>
+        <!--Discover-->
+
+        <!--Contact-->
+    
+        <section id="contact">
+            <div class="contact">
+                <div class="container">
+                    <div class="page-title">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-item anime-top">
+                            <i class="fa fa-phone-square"></i>
+                            <p>+994667845784</p>
+                            <br>
+                            <p>+994667845784</p>
+                        </div>
+                        <div class="contact-item anime-bottom">
+                            <i class="fa fa-tasks"></i>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                        <div class="contact-item anime-top">
+                            <i class="fa fa-envelope-open"></i>
+                            <p>www.example@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact-->
+
+        <!--FOOTER-->
+    
+        <footer class = "footer">
+            <div class="footer-header">
+                <div class="footer-content">
+                    <div class="page-title">
+                        <h4>Subscribe Us</h4>
+                    </div>
+                    <div class="footer-copywright">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <nav class="footer-social">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>			
+                    </nav>
+                </div>
+            </div>
+        </footer> 
+	
+    <!--FOOTER-->
+
+
+	<script type="text/javascript">
+		window.sr = ScrollReveal();
+		sr.reveal('.anime-left',{
+			origin:'left',
+			duration:1000,
+			distance:'25rem',
+			delay:300
+		});
+
+		sr.reveal('.anime-right',{
+			origin:'right',
+			duration:1000,
+			distance:'25rem',
+			delay:600
+		});
+
+		sr.reveal('.anime-top',{
+			origin:'top',
+			duration:1000,
+			distance:'25rem',
+			delay:600
+		});
+
+		sr.reveal('.anime-bottom',{
+			origin:'bottom',
+			duration:1000,
+			distance:'25rem',
+			delay:600
+		});
+	</script>
+
+	<script type="text/javascript">ScrollReveal().reveal('.ani1',{delay:250});
+		ScrollReveal().reveal('.ani2',{delay:250});
+		ScrollReveal().reveal('.ani3',{delay:500});
+		ScrollReveal().reveal('.ani4',{delay:750});
+		ScrollReveal().reveal('.ani5',{delay:1000});
+		ScrollReveal().reveal('.ani6',{delay:1250});
+		ScrollReveal().reveal('.ani7',{delay:1500});
+		ScrollReveal().reveal('.ani8',{delay:1750});
+
+	</script>
+
+	<script type="text/javascript">
+		var menuitems = document.getElementById("menuitems");
+		menuitems.style.maxHeight = '0px';
+		function menuToggle() {
+			if(menuitems.style.maxHeight == '0px'){
+				menuitems.style.maxHeight = '200px';
+			}else{
+				menuitems.style.maxHeight = '0px';
+			}
+		}
+
+        const readingProgress = document.querySelector('#reading-progress-fill');
+        document.addEventListener('scroll', function(e) {
+        let w = (document.body.scrollTop || document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100;
+        readingProgress.style.setProperty('width', w + '%');
+        });
+	</script>
+</body>
