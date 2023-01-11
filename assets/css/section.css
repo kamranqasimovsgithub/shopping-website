@@ -1,0 +1,21 @@
+.title {
+  margin: 60px auto;
+  text-align: center; }
+  .title h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5b2a02;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px; }
+  .title h2::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px; }
+  .title .discount::after {
+    content: none; }

@@ -2,58 +2,48 @@
 /*-----About-----*/
 
 .about{
-	margin-bottom: 150px;
-
+	margin-bottom: 50px;
+    padding: 0;
 }
 
 #about .row {
     margin: 0;
+    padding: 0;
 }
 
 #about .row .column{
     margin: 0 auto;
+    padding: 0;
 }
 
-.about-title{
-	margin: 60px 0;
-    text-align: center;
-}
-
-.about-title h2{
-	width: 100%;
-	text-align: center;
-	margin: 0 auto;
-	color: #5b2a02;
-	font-size: 30px;
-	font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.about-title h2::after{
-	content: "";
-	width: 30px;
-	height: 3px;
-	background-color: #5b2a02;
-	margin: 0 auto;
-	display: block;
-	margin-top: 15px;
-}
 
 .about-content{
+    /* background-color: khaki; */
+
+    margin: 0;
+    padding: 0;
 	display: flex;
+    height: 300px;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
+    /* background-color: yellow; */
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 .about-img{
 	width: 40%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .about-img img{
-	width: 100%;
-	height: 100%;
+    display: block;
 	object-fit: cover;
+	width: 100%;
+    height: 100%;
     transition: .5s;
+    margin: 0;
 }
 
 .about-img:hover img{
@@ -62,21 +52,22 @@
 }
 .about-text{
 	width: 40%;
-
+    margin: 10px 20px;
 }
 
-#about h4{
+.about-text h4{
 	margin-bottom: 25px;
 	text-align: center;
 	font-size: 40px;
-	color: #745b37;
-	font-family: 'Water Brush', cursive;
+	color: #649AB6;
+    font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.5rem;
-	font-weight: 100;
+	font-weight: 700;
+    font-style: italic;
 }
 
-#asterisk{
-	color: #745b37;
+.about-icon{
+	color: #649AB6;
 	margin-bottom: 25px;
 	text-align: center;
 }
@@ -88,12 +79,39 @@
 }
 
 
-@media only screen and (max-width: 990px){
-	.about-img{
+@media only screen and (max-width: 900px){
+    .row .column:last-child .about-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+    }
+
+	.about-content{
+        height: auto;
+    }
+    .about-img{
 		width: 100%;
 		margin-bottom:  20px;
 	}
 	.about-text{
 		width: 100%;
+        margin: 0;
+        padding:  10px;
 	}
+    .about-img:hover img{
+        transform: scale(1.03);
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .about-text h4 {
+        font-size: 30px;
+    }
+    .about-text p {
+        font-size: 12px;
+    }
+
 }

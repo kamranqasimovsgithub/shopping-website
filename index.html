@@ -34,6 +34,48 @@
             transition: width 100ms ease;
             background-color: #69c71d;
         }
+
+        .bar1, .bar2, .bar3 {
+            display: block;
+            width: 35px;
+            height: 5px;
+            background-color: #fff;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+        }
+
+        .change .bar2 {opacity: 0;}
+
+        .change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+        width: 20px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 10px grey; 
+        border-radius: 0px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: rgb(128, 118, 118); 
+        border-radius: 3px;
+        border: 1px solid grey;;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #434343; 
+        }
     </style>
 
 </head>
@@ -56,13 +98,17 @@
                                 <li><a href="#blog">BLOG</a></li>
                                 <li><a href="#contact">CONTACT</a></li>
                             </ul>
-                            <span id="menu-icon" onclick="menuToggle()"><i class="fa fa-reorder"></i></span>
+                            <span id="menu-icon"  onclick="myFunction(this), menuToggle()">
+                                <i class="bar1"></i>
+                                <i class="bar2"></i>
+                                <i class="bar3"></i>
+                            </span>
                         </div>
                     </div>
                     <div class="header-text">
                     
                         <h1><span class="first-letter">W</span>elcome</h1>
-                        <h3>Fill me up with energy</h3>
+                        <h3 class="blink"><span class="blink-text">Feel full of energy</span></h3>
                         <a href="#" class="btn-coffee">Get started</a>
                     </div>
                 </div>	
@@ -73,51 +119,51 @@
         <!--About start-->
         <section id="about">
 
-            <div class="row">
-                <div class="column">
-                    <div class="about">
-                        <div class="container">
-                            <div class="about-title">
-                                <h2>About</h2>
-            
-                            </div>
-                            <div class="about-content">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>About</h2>
+                    </div>
+                    <div class="column">
+                        <div class="about">
+                            
+                            <div class="about-content anime-top">
                                 <div class="about-img anime-left">
                                     <img src="assets/image/about1.jpg" alt="">
                                 </div>
                                 <div class="about-text anime-right">
-                                    <h4>Our Story</h4>
-                                    <div id="asterisk">
+                                    <h4>Good to See You</h4>
+                                    <div class="about-icon">
                                         <span><i class="fa fa-cube"></i></span>
                                     </div>	
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                    <p>Have a look at the world’s largest cycling tech platform, where they cover everything that is cool and new. Aside from gear, you can also find answers about road bikes.</p>
                                     
                                 </div>	
                             </div>					
                         </div>
                     </div>
-                </div>
-                <div class="column">
-                    <div class="about ">
-                        <div class="container">
-                            
-                            <div class="about-content">
-                               
-                                <div class="about-text anime-left">
-                                    <h4>Our Mission</h4>
-                                    <div id="asterisk">
-                                        <span><i class="fa fa-cube"></i></span>
+
+                    <div class="column">
+                        <div class=" about">
+                                
+                                <div class="about-content anime-bottom">
+                                
+                                    <div class="about-text anime-left">
+                                        <h4> Road Biking Adventure</h4>
+                                        <div class="about-icon">
+                                            <span><i class="fa fa-cube"></i></span>
+                                        </div>	
+                                        <p>Cycling is healthy and it is one of the way making your life funny. Most of people agree that biking is fun!  We  present the best road bikes that will enhance your energy and take you along for some awesome rides.</p>
+                                        
                                     </div>	
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                                    
+                                    <div class="about-img anime-right">
+                                        <img src="assets/image/about2.jpg" alt="">
+                                    </div>
                                 </div>	
-                                <div class="about-img anime-right">
-                                    <img src="assets/image/about2.jpg" alt="">
-                                </div>
-                            </div>					
+
                         </div>
                     </div>
-                </div>
+
             </div>
             
         </section>
@@ -126,188 +172,197 @@
         <!--Portfolio-->
     
         <section id="gallery">
-            <div class="about-title">
-                <h2>Gallery</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>Gallery</h2>
+                    </div>
+                    <div>
+                        <div class="portfolio">
+                            <div class="portfolio-item ani1">
+                                <img src="assets/image/b1.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="fa fa-bicycle"></i>
+                                    <p>Be fast!</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-item ani2">
+                                <img src="assets/image/b8.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="fa fa-bicycle"></i>
+                                    <p>Be fast!</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-item ani3">
+                                <img src="assets/image/b3.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="fa fa-bicycle"></i>
+                                    <p>Be fast!</p>
+                                </div>
+                            </div>
+                            
+                            <div class="portfolio-item ani6">
+                                <img src="assets/image/b4.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="fa fa-bicycle"></i>
+                                    <p>Be fast!</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-item ani7">
+                                <img src="assets/image/b7.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="fa fa-bicycle"></i>
+                                    <p>Be fast!</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-item ani8">
+                                <img src="assets/image/b6.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="fa fa-bicycle"></i>
+                                    <p>Be fast!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
 
-            </div>
-            <div class="portfolio">
-                <div class="portfolio-item ani1">
-                    <img src="assets/image/b1.jpg" alt="">
-                    <div class="overlay">
-                        <i class="fa fa-asterisk"></i>
-                    </div>
-                </div>
-                <div class="portfolio-item ani2">
-                    <img src="assets/image/b2.jpg" alt="">
-                    <div class="overlay">
-                        <i class="fa fa-asterisk"></i>
-                    </div>
-                </div>
-                <div class="portfolio-item ani3">
-                    <img src="assets/image/b3.jpg" alt="">
-                    <div class="overlay">
-                        <i class="fa fa-asterisk"></i>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item ani6">
-                    <img src="assets/image/b4.jpg" alt="">
-                    <div class="overlay">
-                        <i class="fa fa-asterisk"></i>
-                    </div>
-                </div>
-                <div class="portfolio-item ani7">
-                    <img src="assets/image/b7.jpg" alt="">
-                    <div class="overlay">
-                        <i class="fa fa-asterisk"></i>
-                    </div>
-                </div>
-                <div class="portfolio-item ani8">
-                    <img src="assets/image/b6.jpg" alt="">
-                    <div class="overlay">
-                        <i class="fa fa-asterisk"></i>
-                    </div>
-                </div>
-            </div>
+            
 
         </section>
     
         <!--Portfolio--End-->
         <!--Discover-->
-        <section id="blog">
-            <div class="about">
-                <div class="container">
-                    <div class="about-title">
-                        <h2>Blog</h2>
-                        <p>Discover our works</p>
-    
-                    </div>
-                    <div class="about-content">
-                        <div class="about-img anime-left">
-                            <img src="assets/image/b5.jpg" alt="">
+        <section id="discount" class="discount">
+            <div class="container">
+                <div class="discount-blink">
+                    <div>Our discounts!</div>
+                </div>
+                <div class="row anime-right">
+                        
+                        <div class="column">
+                            <div class="tab">
+                                <button class="tablinks" onclick="openCity(event, 'card1')" id="defaultOpen">Canyon</button>
+                                <button class="tablinks" onclick="openCity(event, 'card2')">BMC</button>
+                                <button class="tablinks" onclick="openCity(event, 'card3')" style="border: none;">Specialized</button>
+                            </div>
                         </div>
-                        <div class="about-text anime-right">
-                            <h4>High Perfomance</h4>
-                            <div id="asterisk">
-                                <span><i class="fa fa-cube"></i></span>
-                            </div>	
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>						
-                        </div>	
-                    </div>					
+                        
+                        <div class="column discount-card text-center ">
+                        </div>
+
                 </div>
             </div>
+            
         </section>
         <!--Discover-->
-
-        <!--Contact-->
-    
-        <section id="contact">
-            <div class="contact">
-                <div class="container">
-                    <div class="page-title">
-                        <h2>Contact</h2>
+        <!--Blog-->
+        <section id='blog' class="blog">
+            <div class="container">
+                <div class="title">
+                        <h2>Blog</h2>
                     </div>
-                    <div class="contact-content">
-                        <div class="contact-item anime-top">
-                            <i class="fa fa-phone-square"></i>
-                            <p>+994667845784</p>
-                            <br>
-                            <p>+994667845784</p>
-                        </div>
-                        <div class="contact-item anime-bottom">
-                            <i class="fa fa-tasks"></i>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                        <div class="contact-item anime-top">
-                            <i class="fa fa-envelope-open"></i>
-                            <p>www.example@gmail.com</p>
-                        </div>
+                <div class="row">
+                    
+                    <div class="column blog-item anime-left">
+                        <span></span>
+                        <h3></h3>
+                        <p>With new design it is more attractive. There are a lot of categories to choose what yout want.  It is... </p>
+                    
                     </div>
+                    <div class="column blog-item spotlight ">
+                        <span></span>
+                        <h3></h3>
+                        <p>Using modern industrial techniques it is possible to produce quality details to increase durability. Still we...</p>
+                    
+                    </div>
+                    <div class="column blog-item anime-right">
+                        <span></span>
+                        <h3></h3>
+                        <p>You can ride long distances. The best for your buck in terms of depreciation you can buy a road bike that...    </p>
+                    
+                    </div>
+                    
                 </div>
             </div>
         </section>
-        <!--Contact-->
+
+        <!--Blog-->
+
+
+
 
         <!--FOOTER-->
     
-        <footer class = "footer">
-            <div class="footer-header">
-                <div class="footer-content">
-                    <div class="page-title">
-                        <h4>Subscribe Us</h4>
+        <footer id="contact" class="footer">
+            <div class="container">
+                    <div class="contact">
+                            <div class="title">
+                                <h2>Contact</h2>
+                            </div>
+        
+                            <div class="row contact-content">         
+                                
+                                <div class="column">
+                                    <div class="contact-item anime-top">
+                                        <i class="fa fa-phone-square"></i>
+                                        <p>+994667845784</p>
+                                        <br>
+                                        <p>+994667845784</p>
+                                    </div>
+                                </div>
+
+                                <div class="column">
+                                    <div class="contact-item anime-bottom">
+                                        <i class="fa fa-map-marker"></i>
+                                        <p>121 Big Street, Baku,<br/>Azerbaijan</p>
+                                    </div>
+                                </div>
+
+                                <div class="column ">
+                                    <div class="contact-item anime-top">
+                                        <i class="fa fa-envelope-open"></i>
+                                        <p>www.company@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                </div>
+                <div class="row footer-content">
+                    <div class="column">
+                        <div class="title">
+                            <h4>GET IN TOUCH</h4>
+                        </div>
                     </div>
-                    <div class="footer-copywright">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="column">
+                        <div class="footer-copywright">
+                            <p>We’ve focused on building our sport, realizing awesome ideas, and pushing technological innovations to their limits.</p>
+                        </div>
                     </div>
-                    <nav class="footer-social">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>			
-                    </nav>
+                    <div class="column">
+                        <nav style="margin-bottom: 30px;" class="footer-page-links">
+                            <a href="#header">HOME</a>
+                            <a href="#about">ABOUT</a>
+                            <a href="#gallery">GALLERY</a>
+                            <a href="#blog">BLOG</a>
+                            <a href="#contact">CONTACT</a>
+                        </nav>
+                    </div>
+                    <div class="column">
+                        <nav class="footer-social">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>			
+                        </nav>
+                    </div>                      
+                        
                 </div>
             </div>
         </footer> 
 	
     <!--FOOTER-->
-
-
-	<script type="text/javascript">
-		window.sr = ScrollReveal();
-		sr.reveal('.anime-left',{
-			origin:'left',
-			duration:1000,
-			distance:'25rem',
-			delay:300
-		});
-
-		sr.reveal('.anime-right',{
-			origin:'right',
-			duration:1000,
-			distance:'25rem',
-			delay:600
-		});
-
-		sr.reveal('.anime-top',{
-			origin:'top',
-			duration:1000,
-			distance:'25rem',
-			delay:600
-		});
-
-		sr.reveal('.anime-bottom',{
-			origin:'bottom',
-			duration:1000,
-			distance:'25rem',
-			delay:600
-		});
-	</script>
-
-	<script type="text/javascript">ScrollReveal().reveal('.ani1',{delay:250});
-		ScrollReveal().reveal('.ani2',{delay:250});
-		ScrollReveal().reveal('.ani3',{delay:500});
-		ScrollReveal().reveal('.ani4',{delay:750});
-		ScrollReveal().reveal('.ani5',{delay:1000});
-		ScrollReveal().reveal('.ani6',{delay:1250});
-		ScrollReveal().reveal('.ani7',{delay:1500});
-		ScrollReveal().reveal('.ani8',{delay:1750});
-
-	</script>
-
-	<script type="text/javascript">
-		var menuitems = document.getElementById("menuitems");
-		menuitems.style.maxHeight = '0px';
-		function menuToggle() {
-			if(menuitems.style.maxHeight == '0px'){
-				menuitems.style.maxHeight = '200px';
-			}else{
-				menuitems.style.maxHeight = '0px';
-			}
-		}
-
-        const readingProgress = document.querySelector('#reading-progress-fill');
-        document.addEventListener('scroll', function(e) {
-        let w = (document.body.scrollTop || document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100;
-        readingProgress.style.setProperty('width', w + '%');
-        });
-	</script>
+        
+    <script src="assets/js/main.js"></script>
 </body>
