@@ -197,7 +197,6 @@ function magnify(imgID, zoom) {
 
     const cardImg = document.getElementsByClassName('card-image')[0];
 
-    console.log('CRDA',cardImg)
 
 
     function moveMagnifier(e) {

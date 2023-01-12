@@ -2,9 +2,10 @@
     position: relative; 
     height: 100vh;
     width: 100%;
-    background-image: url('https://www.umweltbundesamt.de/sites/default/files/medien/378/bilder/elektrofahrrad_autofocus67_fotolia_52568617_m.jpg');
+    background-image: url('../image/header-bg.jpg');
     background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat ;
     color: #fff;
 }
 
